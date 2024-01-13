@@ -1,0 +1,96 @@
+id,                     name,            type, age
+ 1,                 CHANTIER,       Ressource,   I
+ 2,                 GISEMENT,       Ressource,   I
+ 3,             EXPLOITATION,       Ressource,   I
+ 4,                   CAVITÉ,       Ressource,   I
+ 5,                     MINE,       Ressource,   I
+ 6,          BASSIN ARGILEUX,       Ressource,   I
+ 7,                 VERRERIE,   RareRessource,   I
+ 8,                   PRESSE,   RareRessource,   I
+ 9,                    BAINS,         Success,   I
+10,                  THÉATRE,         Success,   I
+11,                    AUTEL,         Success,   I
+12,                  CASERNE,        Military,   I
+13,                PALISSADE,        Military,   I
+14,                   ÉCURIE,        Military,   I
+15,            TOUR DE GARDE,        Military,   I
+16,               APOTICAIRE,        Sciences,   I
+17,                  ATELIER,        Sciences,   I
+18,                 OFFICINE,        Sciences,   I
+19,              SCRIPTORIUM,        Sciences,   I
+20,                  TAVERNE,         Economy,   I
+21,           DÉPOT D'ARGILE,         Economy,   I
+22,          DÉPOT DE PIERRE,         Economy,   I
+23,            DÉPOT DE BOIS,         Economy,   I
+24,                 CARRIÈRE,       Ressource,  II
+25,              BRIQUETERIE,       Ressource,  II
+26,                  SCIERIE,       Ressource,  II
+27,                  SÉCHOIR,   RareRessource,  II
+28,               SOUFFLERIE,   RareRessource,  II
+29,                   STATUE,         Success,  II
+30,                   TEMPLE,         Success,  II
+31,                  ROSTRES,         Success,  II
+32,                 TRIBUNAL,         Success,  II
+33,                  AQUEDUC,         Success,  II
+34,                 MURAILLE,        Military,  II
+35,                    HARAS,        Military,  II
+36,              BARAQUEMENT,        Military,  II
+37,             CHAMP DE TIR,        Military,  II
+38,             PLACE D'ARME,        Military,  II
+39,                    ÉCOLE,        Sciences,  II
+40,              DISPENSAIRE,        Sciences,  II
+41,              LABORATOIRE,        Sciences,  II
+42,             BIBLIOTHÈQUE,        Sciences,  II
+43,            CARAVANSÉRAIL,         Economy,  II
+44,                    FORUM,         Economy,  II
+45,                   DOUANE,         Economy,  II
+46,                BRASSERIE,         Economy,  II
+47,                OBÉLISQUE,         Success, III
+48,                    SÉNAT,         Success, III
+49,                 PANTHÉON,         Success, III
+50,                  JARDINS,         Success, III
+51,           HôTEL DE VILLE,         Success, III
+52,                   PALACE,         Success, III
+53,         ATELIER DE SIÈGE,        Military, III
+54,                   CIRQUE,        Military, III
+55,           FORTIFICATIONS,        Military, III
+56,                  ARSENAL,        Military, III
+57,                 PRÉTOIRE,        Military, III
+58,               UNIVERSITÉ,        Sciences, III
+59,                    ÉTUDE,        Sciences, III
+60,                 ACADÉMIE,        Sciences, III
+61,             OBSERVATOIRE,        Sciences, III
+62,                ARMURERIE,         Economy, III
+63,      CHAMBRE DE COMMERCE,         Economy, III
+64,                    PHARE,         Economy, III
+65,                    ARÈNE,         Economy, III
+66,                     PORT,         Economy, III
+67,    GUILDE DES MAGISTRATS,           Guild,   G
+68,   GUILDE DES COMMERçANTS,           Guild,   G
+69,    GUILDE DES BâTISSEURS,           Guild,   G
+70, GUILDE DES SCIENTIFIQUES,           Guild,   G
+71,      GUILDE DES USURIERS,           Guild,   G
+72,    GUILDE DES TACTICIENS,           Guild,   G
+73,     GUILDE DES ARMATEURS,           Guild,   G
+74,        LA STATUE DE ZEUS,          Wonder,   W
+75,    LES JARDINS SUSPENDUS,          Wonder,   W
+76,      LE TEMPLE D'ARTÉMIS,          Wonder,   W
+77,           LE GRAND PHARE,          Wonder,   W
+78,   LA GRANDE BIBLIOTHÈQUE,          Wonder,   W
+79,                LE SPHINX,          Wonder,   W
+80,               LE COLOSSE,          Wonder,   W
+81,            LES PYRAMIDES,          Wonder,   W
+82,              LE MAUSOLÉE,          Wonder,   W
+83,                 LE PIRÉE,          Wonder,   W
+84,             LA VIA APPIA,          Wonder,   W
+85,        LE CIRCUS MAXIMUS,          Wonder,   W
+86,                      LOI,           Token,   T
+87,              AGRICULTURE,           Token,   T
+88,            MATHÉMATIQUES,           Token,   T
+89,              PHILOSOHPIE,           Token,   T
+90,                THÉOLOGIE,           Token,   T
+91,             ARCHITECTURE,           Token,   T
+92,                STRATÉGIE,           Token,   T
+93,                 ÉCONOMIE,           Token,   T
+94,                URBANISME,           Token,   T
+95,               MAÇONNERIE,           Token,   T

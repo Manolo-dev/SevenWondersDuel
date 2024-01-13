@@ -1,0 +1,138 @@
+id,                                   input, duration
+ 1,                                    wood, Permanent
+26,                                    wood, Permanent
+26,                                    wood, Permanent
+ 3,                                    wood, Permanent
+ 2,                                   stone, Permanent
+ 5,                                   stone, Permanent
+24,                                   stone, Permanent
+24,                                   stone, Permanent
+ 4,                                    clay, Permanent
+ 6,                                    clay, Permanent
+25,                                    clay, Permanent
+25,                                    clay, Permanent
+ 7,                                   glass, Permanent
+28,                                   glass, Permanent
+ 8,                                   paper, Permanent
+27,                                   paper, Permanent
+43,                     wood | stone | clay, Permanent
+77,                     wood | stone | clay, Permanent
+83,                           glass | paper, Permanent
+44,                           glass | paper, Permanent
+23,                              wood for 1, Permanent
+22,                             stone for 1, Permanent
+21,                              clay for 1, Permanent
+45,                             glass for 1, Permanent
+45,                             paper for 1, Permanent
+16,                                     # 1, Final
+17,                                     # 1, Final
+39,                                     # 1, Final
+41,                                     # 1, Final
+40,                                     # 2, Final
+42,                                     # 2, Final
+58,                                     # 2, Final
+61,                                     # 2, Final
+82,                                     # 2, Final
+83,                                     # 2, Final
+75,                                     # 3, Final
+77,                                     # 3, Final
+80,                                     # 3, Final
+84,                                     # 3, Final
+85,                                     # 3, Final
+59,                                     # 3, Final
+60,                                     # 3, Final
+62,                                     # 3, Final
+63,                                     # 3, Final
+64,                                     # 3, Final
+65,                                     # 3, Final
+66,                                     # 3, Final
+ 9,                                     # 3, Final
+10,                                     # 3, Final
+11,                                     # 3, Final
+74,                                     # 3, Final
+29,                                     # 4, Final
+30,                                     # 4, Final
+31,                                     # 4, Final
+78,                                     # 4, Final
+87,                                     # 4, Final
+32,                                     # 5, Final
+33,                                     # 5, Final
+47,                                     # 5, Final
+48,                                     # 5, Final
+49,                                     # 6, Final
+50,                                     # 6, Final
+79,                                     # 6, Final
+51,                                     # 7, Final
+52,                                     # 7, Final
+89,                                     # 7, Final
+81,                                     # 9, Final
+12,                                     ! 1, Instant
+13,                                     ! 1, Instant
+14,                                     ! 1, Instant
+35,                                     ! 1, Instant
+36,                                     ! 1, Instant
+74,                                     ! 1, Instant
+85,                                     ! 1, Instant
+15,                                     ! 2, Instant
+34,                                     ! 2, Instant
+37,                                     ! 2, Instant
+38,                                     ! 2, Instant
+53,                                     ! 2, Instant
+54,                                     ! 2, Instant
+55,                                     ! 2, Instant
+80,                                     ! 2, Instant
+56,                                     ! 3, Instant
+57,                                     ! 3, Instant
+84,                                     ! 3, Instant
+20,                                     $ 2, Instant
+46,                                     $ 2, Instant
+75,                                     $ 2, Instant
+87,                                     $ 2, Instant
+93,                                     $ 2, Instant
+76,                                    $ 12, Instant
+16,                                 = Wheel, Instant
+39,                                 = Wheel, Instant
+17,                               = Compass, Instant
+41,                               = Compass, Instant
+18,                                = Mortar, Instant
+40,                                = Mortar, Instant
+19,                               = Feather, Instant
+42,                               = Feather, Instant
+59,                                 = Clock, Instant
+60,                                 = Clock, Instant
+58,                           = Planetarium, Instant
+61,                           = Planetarium, Instant
+86,                                   = Law, Instant
+62,                        $ 2 per Military, Instant
+63,                  $ 2 per RareRessources, Instant
+64,                         $ 2 per Economy, Instant
+65,                          $ 2 per Wonder, Instant
+66,                       $ 2 per Ressource, Instant
+67,                     $ max 2 per Success, Instant
+68,                     $ max 2 per Economy, Instant
+70,                    $ max 2 per Sciences, Instant
+72,                    $ max 2 per Military, Instant
+73,                   $ max 1 per Ressource, Instant
+73,               $ max 1 per RareRessource, Instant
+93,                         $ 2 per Linkage, Instant
+88,                           # 3 per Token, Final
+67,                     # max 1 per Success, Final
+68,                     # max 1 per Economy, Final
+70,                    # max 1 per Sciences, Final
+71,                           # max 1 per $, Final
+72,                    # max 1 per Military, Final
+69,                      # max 2 per Wonder, Final
+92,                        ! 1 per Military, Instant
+75,                                  replay, Instant
+76,                                  replay, Instant
+79,                                  replay, Instant
+83,                                  replay, Instant
+84,                                  replay, Instant
+90,                        Wonder -> replay, Instant
+84,                                   rob 3, Instant
+74,                           rob Ressource, Instant
+85,                       rob RareRessource, Instant
+93,                        Money -> Discard, Permanent
+82,                              steal Card, Instant
+93,                             steal Money, Permanent
+78,                             steal Token, Instant
