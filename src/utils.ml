@@ -1,4 +1,4 @@
-let is_num s =
+let is_int s =
   try ignore (int_of_string s); true
   with Failure _ -> false
 ;;
@@ -47,3 +47,11 @@ let split c s =
   in
   aux s
 ;;
+
+let rec forall f = function
+  | [] -> true
+  | e::l when f e -> forall f l
+  | _ -> false
+;;
+
+let is_in e l = exists (fun e' -> e = e') l;;
