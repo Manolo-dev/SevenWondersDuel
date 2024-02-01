@@ -55,3 +55,25 @@ let rec forall f = function
 ;;
 
 let is_in e l = exists (fun e' -> e = e') l;;
+
+let shuffle l =
+  let () = Random.self_init () in
+  let rec extract n = function
+    | [] -> failwith "extract"
+    | e::l when n = 0 -> (e, l)
+    | e::l -> let (e', l') = extract (n - 1) l in (e', e::l')
+  in
+  let rec aux = function
+    | [] -> []
+    | l -> let (e, l') = extract (Random.int (len l)) l in e::(aux l')
+  in
+  aux l
+;;
+
+let list_of_hashmap h =
+  let rec aux acc = function
+    | [] -> acc
+    | (k, v)::l -> aux (v::acc) l
+  in
+  aux [] (Hashtbl.to_seq h |> List.of_seq)
+;;

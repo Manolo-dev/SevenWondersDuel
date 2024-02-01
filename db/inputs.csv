@@ -90,19 +90,6 @@ id,                                                                            i
 87,                                                                          get $ 2, Instant
 93,                                                                          get $ 2, Instant
 76,                                                                         get $ 12, Instant
-16,                                                                      get = wheel, Instant
-39,                                                                      get = wheel, Instant
-17,                                                                    get = compass, Instant
-41,                                                                    get = compass, Instant
-18,                                                                     get = mortar, Instant
-40,                                                                     get = mortar, Instant
-19,                                                                    get = feather, Instant
-42,                                                                    get = feather, Instant
-59,                                                                      get = clock, Instant
-60,                                                                      get = clock, Instant
-58,                                                                get = planetarium, Instant
-61,                                                                get = planetarium, Instant
-86,                                                                        get = law, Instant
 62,                                                           get $ 2 count Military, Instant
 63,                                                     get $ 2 count RareRessources, Instant
 64,                                                            get $ 2 count Economy, Instant
@@ -115,6 +102,19 @@ id,                                                                            i
 73,                                                            get $ 1 max Ressource, Instant
 73,                                                        get $ 1 max RareRessource, Instant
 93,                                                            get $ 2 count Linkage, Instant
+16,                                                                      get = wheel, Permanent
+39,                                                                      get = wheel, Permanent
+17,                                                                    get = compass, Permanent
+41,                                                                    get = compass, Permanent
+18,                                                                     get = mortar, Permanent
+40,                                                                     get = mortar, Permanent
+19,                                                                    get = feather, Permanent
+42,                                                                    get = feather, Permanent
+59,                                                                      get = clock, Permanent
+60,                                                                      get = clock, Permanent
+58,                                                                get = planetarium, Permanent
+61,                                                                get = planetarium, Permanent
+86,                                                                        get = law, Permanent
 88,                                                              get # 3 count Token, Final
 67,                                                              get # 1 max Success, Final
 68,                                                              get # 1 max Economy, Final

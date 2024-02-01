@@ -26,7 +26,6 @@ and player = {
   success: int;
   money: int;
   military: int;
-  wonder: int;
   wonders: card list;
   sciences: sciences list;
   effects_when_played: (color * effect) list;
@@ -61,7 +60,7 @@ and board = {
   age1: card list;
   age2: card list;
   age3: card list;
-  token: card list;
+  tokens: card list;
 }
 
 and party = {
@@ -79,7 +78,6 @@ let new_player () = {
   success = 0;
   money = 0;
   military = 0;
-  wonder = 0;
   wonders = [];
   sciences = [];
   effects_when_played = [];
@@ -92,7 +90,7 @@ let new_party () = {
     age1 = [];
     age2 = [];
     age3 = [];
-    token = [];
+    tokens = [];
   };
   discard = [];
   replaying = false;

@@ -51,8 +51,58 @@ let parse_cards_input db_cards db_inputs db_costs =
   hashmap
 ;;
 
-let db_cards  = tl (Csv.load ~separator:','  "db/cards.csv")
+let  db_cards = tl (Csv.load ~separator:','  "db/cards.csv")
 let db_inputs = tl (Csv.load ~separator:',' "db/inputs.csv")
-let db_costs  = tl (Csv.load ~separator:','  "db/costs.csv")
+let  db_costs = tl (Csv.load ~separator:','  "db/costs.csv")
 
-let cards = parse_cards_input db_cards db_inputs db_costs
+let cards = list_of_hashmap (parse_cards_input db_cards db_inputs db_costs)
+let    ageI = shuffle (filter (fun c -> c.age =   "I") cards)
+let   ageII = shuffle (filter (fun c -> c.age =  "II") cards)
+let  ageIII = shuffle (filter (fun c -> c.age = "III") cards)
+let  guilds = shuffle (filter (fun c -> c.age =   "G") cards)
+let wonders = shuffle (filter (fun c -> c.age =   "W") cards)
+let  tokens = shuffle (filter (fun c -> c.age =   "T") cards)
+
+let                   ageI = match    ageI with |           _::_::_::  ageI ->              ageI | _ -> failwith "Not enough cards in age I";;
+let                  ageII = match   ageII with |           _::_::_:: ageII ->             ageII | _ -> failwith "Not enough cards in age II";;
+let                 ageIII = match  ageIII with |           _::_::_::ageIII ->            ageIII | _ -> failwith "Not enough cards in age III";;
+let                 guilds = match  guilds with |           a::b::c::_      ->           [a;b;c] | _ -> failwith "Not enough cards in guilds";;
+let                wonders = match wonders with | a::b::c::d::e::f::g::h::_ -> [a;b;c;d;e;f;g;h] | _ -> failwith "Not enough cards in wonders";;
+let                 tokens = match  tokens with | a::b::c::d::e::f::g::h::_ -> [a;b;c;d;e;f;g;h] | _ -> failwith "Not enough cards in tokens";;
+let discard_tokens, tokens = match  tokens with |           a::b::c::tokens ->   [a;b;c], tokens | _ -> failwith "Not enough tokens";;
+
+let  ageIII = shuffle (ageIII @ guilds);;
+
+let init () =
+  let b = {age1 = ageI; age2 = ageII; age3 = ageIII; tokens = tokens} in
+  let p1 = new_player () in
+  let p2 = new_player () in
+
+  let p1 = {p1 with money = 7} in
+  let p2 = {p2 with money = 7} in
+
+  let w, wonders = Ui.take_card wonders in
+  let p1 = {p1 with wonders = w::p1.wonders} in
+  let w, wonders = Ui.take_card wonders in
+  let p2 = {p2 with wonders = w::p2.wonders} in
+  let w, wonders = Ui.take_card wonders in
+  let p2 = {p2 with wonders = w::p2.wonders} in
+  let w, wonders = Ui.take_card wonders in
+  let p1 = {p1 with wonders = w::p1.wonders} in
+
+  let w, wonders = Ui.take_card wonders in
+  let p2 = {p2 with wonders = w::p2.wonders} in
+  let w, wonders = Ui.take_card wonders in
+  let p1 = {p1 with wonders = w::p1.wonders} in
+  let w, wonders = Ui.take_card wonders in
+  let p1 = {p1 with wonders = w::p1.wonders} in
+  let w, wonders = Ui.take_card wonders in
+  let p2 = {p2 with wonders = w::p2.wonders} in
+
+  let cp = new_party () in
+  let cp = {cp with board = b} in
+  let cp = {cp with discard = discard_tokens} in
+  let cp = {cp with p1 = p1} in
+  let cp = {cp with p2 = p2} in
+  cp
+;;
